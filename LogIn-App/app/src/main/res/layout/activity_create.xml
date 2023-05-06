@@ -13,8 +13,18 @@
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/textStdId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Insert Item: "
+            android:textColor="#000000"
+            android:textSize="24sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -27,14 +37,17 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                tools:ignore="ExtraText">
 
                 <TextView
                     android:id="@+id/textView3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="feild A" />
+                    android:text="Field A"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />/>
 
                 <EditText
                     android:id="@+id/edtA"
@@ -44,7 +57,7 @@
                     android:ems="10"
                     android:inputType="textPersonName"
                     android:minHeight="48dp"
-                    android:text="Name" />
+                    tools:ignore="SpeakableTextPresentCheck" />
             </LinearLayout>
 
             <LinearLayout
@@ -58,7 +71,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="feild B" />
+                    android:text="Field B"
+                    android:textColor="#000000"
+                    android:textSize="16sp"/>
 
                 <EditText
                     android:id="@+id/edtB"
@@ -68,7 +83,7 @@
                     android:ems="10"
                     android:inputType="textPersonName"
                     android:minHeight="48dp"
-                    android:text="Name" />
+                    tools:ignore="SpeakableTextPresentCheck" />
             </LinearLayout>
 
             <LinearLayout
@@ -82,7 +97,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="feild C" />
+                    android:text="Field C"
+                    android:textColor="#000000"
+                    android:textSize="16sp"/>
 
                 <EditText
                     android:id="@+id/edtC"
@@ -92,7 +109,7 @@
                     android:ems="10"
                     android:inputType="textPersonName"
                     android:minHeight="48dp"
-                    android:text="Name" />
+                    tools:ignore="SpeakableTextPresentCheck" />
             </LinearLayout>
 
             <LinearLayout
@@ -106,7 +123,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="feild D" />
+                    android:text="Field D"
+                    android:textColor="#000000"
+                    android:textSize="16sp"/>
 
                 <EditText
                     android:id="@+id/edtD"
@@ -116,7 +135,7 @@
                     android:ems="10"
                     android:inputType="textPersonName"
                     android:minHeight="48dp"
-                    android:text="Name" />
+                    tools:ignore="SpeakableTextPresentCheck" />
             </LinearLayout>
 
         </LinearLayout>
@@ -135,7 +154,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="C" />
+                android:text="Save" />
 
             <Space
                 android:layout_width="wrap_content"
@@ -147,7 +166,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="E" />
+                android:text="Exit" />
         </LinearLayout>
 
     </LinearLayout>

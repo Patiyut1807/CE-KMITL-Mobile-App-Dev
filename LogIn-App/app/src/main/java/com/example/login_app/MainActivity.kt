@@ -20,6 +20,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         val uname = findViewById<EditText>(R.id.username)
+        uname.setText("64010479")
         val loginBtn = findViewById<Button>(R.id.loginBtn)
         loginBtn.setOnClickListener {
             if (uname.text.toString().isEmpty() ){

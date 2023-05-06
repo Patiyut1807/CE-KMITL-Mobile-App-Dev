@@ -16,6 +16,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+        <TextView
+            android:id="@+id/textStdId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Insert Item: "
+            android:textColor="#000000"
+            android:textSize="24sp" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -27,14 +35,17 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                tools:ignore="ExtraText">
 
                 <TextView
                     android:id="@+id/textView3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="feild A" />
+                    android:text="Field A"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />/>
 
                 <EditText
                     android:id="@+id/edtA"
@@ -44,7 +55,7 @@
                     android:ems="10"
                     android:inputType="textPersonName"
                     android:minHeight="48dp"
-                    android:text="Name" />
+                    tools:ignore="SpeakableTextPresentCheck" />
             </LinearLayout>
 
             <LinearLayout
@@ -58,7 +69,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="feild B" />
+                    android:text="Field B"
+                    android:textColor="#000000"
+                    android:textSize="16sp"/>
 
                 <EditText
                     android:id="@+id/edtB"
@@ -68,7 +81,7 @@
                     android:ems="10"
                     android:inputType="textPersonName"
                     android:minHeight="48dp"
-                    android:text="Name" />
+                    tools:ignore="SpeakableTextPresentCheck" />
             </LinearLayout>
 
             <LinearLayout
@@ -82,7 +95,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="feild C" />
+                    android:text="Field C"
+                    android:textColor="#000000"
+                    android:textSize="16sp"/>
 
                 <EditText
                     android:id="@+id/edtC"
@@ -92,7 +107,7 @@
                     android:ems="10"
                     android:inputType="textPersonName"
                     android:minHeight="48dp"
-                    android:text="Name" />
+                    tools:ignore="SpeakableTextPresentCheck" />
             </LinearLayout>
 
             <LinearLayout
@@ -106,7 +121,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="feild D" />
+                    android:text="Field D"
+                    android:textColor="#000000"
+                    android:textSize="16sp"/>
 
                 <EditText
                     android:id="@+id/edtD"
@@ -116,7 +133,7 @@
                     android:ems="10"
                     android:inputType="textPersonName"
                     android:minHeight="48dp"
-                    android:text="Name" />
+                    tools:ignore="SpeakableTextPresentCheck" />
             </LinearLayout>
 
         </LinearLayout>
@@ -142,6 +159,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:checkable="false"
+                android:clickable="true"
+                android:enabled="false"
                 android:text="update" />
 
             <Space
