@@ -70,7 +70,8 @@ class DataListActivity : AppCompatActivity() {
                 var dataList = mutableListOf<String>()
                 for (i in 0 until  data.length()){
 
-                    dataList.add(data.getJSONObject(i).getString("field_a"))
+//                    dataList.add(data.getJSONObject(i).getString("field_a"))
+                    dataList.add(data.getJSONObject(i).getString("id").toString())
                 }
                 runOnUiThread {
                     val arrayAdapter =
